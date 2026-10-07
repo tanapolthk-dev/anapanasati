@@ -1,0 +1,24 @@
+{
+  "name": "Anapanasati",
+  "short_name": "Anapanasati",
+  "description": "ฝึกสมาธิ เจริญสติ สวดมนต์ เสียงผ่อนคลาย และเสียงช่วยนอนหลับ ใช้ฟรีผ่านเว็บเบราว์เซอร์",
+  "lang": "th",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A0D18",
+  "theme_color": "#0A0D18",
+  "categories": ["health", "lifestyle", "education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "นั่งสมาธิ", "url": "./#meditate" },
+    { "name": "สวดมนต์", "url": "./#chant" },
+    { "name": "นอนหลับ", "url": "./#sleep" }
+  ]
+}
