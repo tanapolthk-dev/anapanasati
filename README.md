@@ -27,15 +27,13 @@ ads.txt.example         ตัวอย่าง ads.txt สำหรับ AdSe
 .github/workflows/      สคริปต์ deploy ขึ้น GitHub Pages อัตโนมัติ
 ```
 
-## เผยแพร่บน GitHub Pages
-ลิงก์หลักของเว็บ: **https://anapanasati.github.io/**
-
-ตั้งค่าครั้งแรก:
-1. สร้าง GitHub Organization ฟรีชื่อ `anapanasati`
-2. repository ต้องอยู่ใน Organization นั้น และชื่อ `anapanasati.github.io`
-3. **Settings → Pages → Build and deployment → Source** เลือก **GitHub Actions**
-4. แท็บ **Actions** รอ "Deploy to GitHub Pages" ขึ้นเครื่องหมายถูกสีเขียว
-5. `siteUrl` ใน CONFIG ของ `index.html` ตั้งเป็น `https://anapanasati.github.io/` แล้ว QR ในแอปจะชี้ลิงก์นี้
+## เผยแพร่บน GitHub Pages (ครั้งแรก ~10 นาที)
+1. สร้าง repository ใหม่บน GitHub ชื่อ `anapanasati` (Public)
+2. อัปโหลดไฟล์ทั้งหมดในโฟลเดอร์นี้ (รวมโฟลเดอร์ `.github`) เข้า branch `main`
+3. ไปที่ **Settings → Pages → Build and deployment → Source** เลือก **GitHub Actions**
+4. ไปที่แท็บ **Actions** รอให้ "Deploy to GitHub Pages" ขึ้นเครื่องหมายถูกสีเขียว
+5. เว็บจะอยู่ที่ `https://<ชื่อผู้ใช้>.github.io/anapanasati/`
+6. เปิด `index.html` แก้ `siteUrl` ใน CONFIG ให้เป็นลิงก์นี้ แล้ว commit อีกครั้ง — QR ในแอปจะชี้ลิงก์ที่ถูกต้อง
 
 ## ตั้งค่าโฆษณา (Google AdSense)
 1. แนะนำให้ผูกโดเมนของตัวเองก่อน (เช่น `anapanasati.com`) เพราะ `ads.txt` ต้องอยู่ที่รากโดเมน — ใส่ชื่อโดเมนในไฟล์ `CNAME` และตั้ง DNS ตามคู่มือ GitHub Pages
